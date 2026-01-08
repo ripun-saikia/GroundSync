@@ -1,0 +1,41 @@
+:root {
+  /* Colors */
+  /* Colors */
+  --color-primary: #16a34a;
+  /* Green 600 */
+  --color-secondary: #15803d;
+  /* Green 700 */
+  --color-accent: #16a34a;
+  --color-accent-hover: #15803d;
+
+  --color-bg: #FFFFFF;
+  --color-surface: #FFFFFF;
+
+  --color-text-main: #0f172a;
+  /* Slate 900 */
+  --color-text-secondary: #475569;
+  /* Slate 600 */
+  --color-text-light: #FFFFFF;
+
+  /* Typography */
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-size-base: 16px;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Borders */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.05);
+}

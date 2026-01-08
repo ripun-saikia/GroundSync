@@ -1,0 +1,181 @@
+@import './styles/variables.css';
+@import './styles/global.css';
+
+/* Add specific page or component styles below if not split out */
+
+/* Header Styles */
+/* Main Styles */
+.app-header {
+  background-color: #ffffff;
+  color: var(--color-text-main);
+  padding: 20px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #0f172a;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.sign-in-btn {
+  font-weight: 600;
+}
+
+/* Landing Page Styles */
+.landing-main {
+  /* min-height handled by content */
+}
+
+/* Hero Section */
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 64px;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #0f172a;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  color: #475569;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.hero-subtext {
+  margin-bottom: 32px;
+}
+
+.hero-btn {
+  padding: 14px 32px;
+  font-size: 1.1rem;
+}
+
+/* Hero Illustration */
+.hero-illustration {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration-card-back {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: #f0fdf4;
+  /* Light green */
+  border-radius: 32px;
+  transform: rotate(-6deg);
+  z-index: 1;
+}
+
+.illustration-card-front {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  background-color: #f8fafc;
+  /* Slate 50 */
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  z-index: 2;
+}
+
+/* How It Works Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.feature-card {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #f1f5f9;
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.feature-card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 48px;
+  }
+
+  .hero-illustration {
+    order: -1;
+    height: 300px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    text-align: center;
+  }
+
+  .icon-circle {
+    margin: 0 auto 24px;
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion - GroundSync</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="container header-content">
+                <a href="/feed.html" class="logo">
+                    <span class="logo-icon">GS</span>
+                    GroundSync
+                </a>
+                <div class="user-info" style="display: flex; align-items: center; gap: 12px;">
+                    <span id="user-display-name" style="font-weight: 500;"></span>
+                </div>
+            </div>
+        </header>
+
+        <main class="container" style="padding-top: 24px; max-width: 800px;">
+            <a href="/feed.html" class="btn btn-outline"
+                style="margin-bottom: 16px; border: none; padding-left: 0; color: #666;">
+                ← Back to Feed
+            </a>
+
+            <!-- Original Post -->
+            <div id="original-post-container" class="card" style="margin-bottom: 24px;">
+                <p>Loading post...</p>
+            </div>
+
+            <!-- Discussion Feed -->
+            <div style="margin-bottom: 24px;">
+                <h3 style="margin-bottom: 16px;">Discussion</h3>
+                <div id="discussion-feed" style="display: flex; flex-direction: column; gap: 16px;">
+                    <!-- Comments injected here -->
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="card" style="position: sticky; bottom: 20px; border: 1px solid #eee;">
+                <form id="discussion-form">
+                    <textarea id="comment-input" placeholder="Join the discussion..." rows="2"
+                        style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; margin-bottom: 12px; resize: vertical;"></textarea>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <input type="file" id="media-input" accept="image/*,video/*" style="display: none;">
+                        <button type="button" id="media-btn" class="btn btn-outline"
+                            style="font-size: 0.85rem; border-color: #ddd; color: #555;">
+                            📷 Add Media
+                        </button>
+                        <span id="file-name"
+                            style="font-size: 0.8rem; color: #666; margin-left: 8px; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"></span>
+
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="/src/discussion.js"></script>
+</body>
+
+</html>
