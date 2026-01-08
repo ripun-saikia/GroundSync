@@ -5,4 +5,4 @@ The core idea :->
 Most platforms today work like this:
 
 You follow people,You see everything they post,
-even if it’s irrelevant to youGroundSync flips this.Instead of following people,You follow locations (city, college, community, park, etc.). You only see posts from places you care about. This removes noise and makes content relevant and local.
+even if it’s irrelevant to you.<br>GroundSync flips this.Instead of following people,You follow locations (city, college, community, park, etc.). You only see posts from places you care about. This removes noise and makes content relevant and local.
